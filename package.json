@@ -1,5 +1,5 @@
 {
-  "name": "mor-lint",
+  "name": "@rui/mor-lint",
   "version": "1.0.0",
   "description": "代码风格检查",
   "main": "index.js",

@@ -26,7 +26,7 @@ module.exports = {
     },
     env: {
         browser: true,
-        node: true,
+        node: true, // 需要添加 eslint-plugin-node
         es6: true
     },
     globals: {},

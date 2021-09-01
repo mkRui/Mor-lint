@@ -1,10 +1,16 @@
 {
-  "name": "@rui/mor-lint",
+  "name": "mor-lint",
   "version": "1.0.0",
-  "description": "代码风格检查",
+  "description": "mor 代码风格检查",
   "main": "index.js",
+  "bin": {
+    "mor-eslint": "./eslint.js",
+    "mor-stylelint": "./stylelint.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "eslint . --ext .js,.ts,.vue,.jsx,.tsx --fix",
+    "lint:style": "stylelint . --syntax less --fix --ignore-path ./.stylelintignore | stylelint . --custom-syntax postcss-html --fix",
     "commit-log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "repository": {
@@ -16,5 +22,19 @@
   "bugs": {
     "url": "https://github.com/mkRui/Mor-lint/issues"
   },
-  "homepage": "https://github.com/mkRui/Mor-lint#readme"
+  "homepage": "https://github.com/mkRui/Mor-lint#readme",
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-alloy": "^4.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.3.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "typescript": "^4.4.2"
+  }
 }

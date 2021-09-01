@@ -16,11 +16,6 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/typescript',
         'prettier',
-        'prettier/@typescript-eslint',
-        'prettier/babel',
-        'prettier/standard',
-        'prettier/unicorn',
-        'prettier/react',
         'plugin:prettier/recommended'
     ],
     plugins: ['@typescript-eslint', 'react'],

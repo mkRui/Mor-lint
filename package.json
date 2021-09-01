@@ -1,6 +1,6 @@
 {
   "name": "mor-lint",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "mor 代码风格检查",
   "main": "index.js",
   "bin": {
@@ -32,6 +32,7 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.0",
     "prettier": "^2.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",

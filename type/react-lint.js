@@ -15,6 +15,7 @@ module.exports = {
         'alloy/typescript',
         'plugin:import/errors',
         'plugin:import/typescript',
+        "plugin:promise/recommended",
         'prettier',
         'plugin:prettier/recommended'
     ],

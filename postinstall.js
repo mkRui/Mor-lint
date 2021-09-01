@@ -84,6 +84,7 @@ const initConfigFile = () => {
             text: `dist/**
 node_modules/**
 dist/**
+config
 `
         },
         {

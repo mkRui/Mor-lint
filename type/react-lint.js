@@ -33,6 +33,8 @@ module.exports = {
     globals: {},
     rules: {
         'no-param-reassign': 'off',
+        "promise/catch-or-return": "off",
+        "promise/always-return": "off",
         'max-params': ['error', 5],
         'no-undef': 'off',
         'prettier/prettier': [

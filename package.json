@@ -1,6 +1,6 @@
 {
   "name": "mor-lint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mor 代码风格检查",
   "main": "index.js",
   "bin": {
@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node postinstall.js",
     "lint:js": "eslint . --ext .js,.ts,.vue,.jsx,.tsx --fix",
     "lint:style": "stylelint . --syntax less --fix --ignore-path ./.stylelintignore | stylelint . --custom-syntax postcss-html --fix",
     "commit-log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"

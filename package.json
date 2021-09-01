@@ -1,6 +1,6 @@
 {
   "name": "mor-lint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "mor 代码风格检查",
   "main": "index.js",
   "bin": {

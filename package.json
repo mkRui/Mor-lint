@@ -12,7 +12,7 @@
     "postinstall": "node postinstall.js",
     "lint:js": "eslint . --ext .js,.ts,.vue,.jsx,.tsx --fix",
     "lint:style": "stylelint . --syntax less --fix --ignore-path ./.stylelintignore | stylelint . --custom-syntax postcss-html --fix",
-    "commit-log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "commit-log": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "repository": {
     "type": "git",

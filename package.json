@@ -1,6 +1,6 @@
 {
   "name": "mor-lint",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "mor 代码风格检查",
   "main": "index.js",
   "bin": {
@@ -10,9 +10,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node postinstall.js",
+    "commit": "git-cz && yarn run release:patch && git push",
+    "release:major": "standard-version -r major -n",
+    "release:minor": "standard-version -r minor -n",
+    "release:patch": "standard-version -r patch -n",
+    "commit-log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "lint:css": "mor-stylelint . --syntax less --fix --ignore-path ./.stylelintignore | mor-stylelint . --custom-syntax postcss-html --fix",
     "lint:js": "eslint . --ext .js,.ts,.vue,.jsx,.tsx --fix",
-    "lint:style": "stylelint . --syntax less --fix --ignore-path ./.stylelintignore | stylelint . --custom-syntax postcss-html --fix",
-    "commit-log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "lint:style": "stylelint . --syntax less --fix --ignore-path ./.stylelintignore | stylelint . --custom-syntax postcss-html --fix"
+  },
+  "standard-version": {
+      "skip": {
+          "tag": true
+      }
+  },
+  "config": {
+      "commitizen": {
+          "path": "cz-conventional-changelog"
+      }
   },
   "repository": {
     "type": "git",

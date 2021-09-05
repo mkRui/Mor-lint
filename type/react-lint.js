@@ -24,6 +24,7 @@ module.exports = {
         parser: '@typescript-eslint/parser',
         ecmaVersion: 2020,
         sourceType: 'module'
+        
     },
     env: {
         browser: true,
@@ -37,6 +38,7 @@ module.exports = {
         "promise/always-return": "off",
         'max-params': ['error', 5],
         'no-undef': 'off',
+        '@typescript-eslint/explicit-member-accessibility': 'off',
         'prettier/prettier': [
             'error',
             {
